@@ -1,6 +1,8 @@
-\documentclass[12pt]{article}
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=1.7cm,right=1.7cm]{geometry}
+\usepackage{mdframed}
+\usepackage{xcolor}
 \usepackage{amsmath, amsfonts, amssymb}
 \usepackage{tikz}
 \usepackage{graphicx}
@@ -10,30 +12,20 @@
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,        % Colorea los enlaces en lugar de usar cajas
-    linkcolor=red,         % Color de los enlaces internos (por ejemplo, índice)
+    linkcolor=blue,         % Color de los enlaces internos (por ejemplo, índice)
     urlcolor=cyan           % Color de los enlaces externos (por ejemplo, URLs)
 }
 \usepackage{appendix}
+\definecolor{gf}{RGB}{220,220,220}
 
 \title{\textbf{F\'isica}}
 \author{Joaqu\'in Parra S. \\ FCFM UdeC}
 
 \begin{document}
-\begin{center}
- {\Huge \textbf{F\'isica\\}}%No abreviar, no subrayar, no usar comillas. Se escribe completamente en mayúsculas
-		        \vspace*{1.5\baselineskip}
-
-		\large{\textbf{Por: Joaqu\'in Parra S.}}\\ %No abreviar, no subrayar, no usar comillas. Solo la priemra letra usa mayúsculas
-		
-        \vspace*{1,5\baselineskip}
-
-		\large{\textbf{FCFM UdeC}}\\ %Nombre como aparece en registro académico
-		
-		\vspace{1,5\baselineskip}
-		
-\end{center}
-\large{
-\begin{abstract}
+\maketitle
+\cleardoublepage
+\frontmatter
+\chapter*{Prólogo}  % O Prefacio
  Este apunte nace con el fin de proporcionar una herramienta externa de apoyo a los estudiantes de ense\~{n}anza media del Colegio 
  Seminario Padre Alberto Hurtado de Chill\'an (del cual alguna vez fui estudiante) para sus cursos de f\'isica, y tambi\'en para posibles
  competencias (tanto internas como externas) en las que quisieran participar, aunque la distribuci\'on de este mismo se deja a manos del lector.
@@ -42,42 +34,76 @@
  ciencias f\'isicas y matem\'aticas, sin dejar de lado a la gente que recurra a \'el para salvar una nota.
  Con el paso del tiempo, se ir\'an agregando contenidos y se ir\'a perfeccionando este documento, el cual se escribi\'o utilizando el sistema
  {\LaTeX}, el cual se recomienda encarecidamente aprender si planea caminar por la senda de las ciencias puras.
-\end{abstract}
-}
-\newpage
+ \cleardoublepage
 \tableofcontents
-\section{Mediciones}
-aaaaa
+\mainmatter
 
-\section{Cinemática}
- \subsection{Movimiento en una dimensi\'on}
-  \subsubsection{MRU}
-  \subsubsection{MRUA}
-\section{Dinámica}
-aaaa
-\section{Cantidad de Movimiento y Momento Angular}
+\chapter{Mediciones}
+ Previo al estudio de \emph{la f\'isica} como tal, es necesario hablar de como \emph{se mide} en f\'isica. Al final de cuentas, todas las 
+ ecuaciones f\'isicas son aplicadas sobre par\'ametros los cuales han de ser medidos previamente. 
+ Partiremos definiendo a la \textbf{\emph{medici\'on}} como \textbf{el acto de calcular el valor n\'umerico de cierta magnitud f\'isica.}\\
+ Considere la siguiente situación: 
+ \begin{mdframed}[backgroundcolor=gf]
+  Usted tiene un CD de un radio desconocido, el cual se propone a calcular. Para esto, usted escoge una regla
+  y procede a medir la distancia desde el centro de dicho CD hasta un extremo. Ahora, considere que dicha regla arrojó que el radio del CD era
+  de unos ``6 $cm$". ¿Podría afirmar que ese es el valor exacto del radio del CD? Muy probablemente su regla esté graduada hasta los milímetros.
+  Considerando la misma regla, ¿Podría afirmar que el radio del CD no es de 6,00000001 $cm$?
+ \end{mdframed}
+ La finalidad de este capítulo es entregar las bases para que usted pueda operar magnitudes de forma correcta y ordenada. Si bien durante su 
+ paso por la enseñanza media este cap\'itulo no ser\'a de mayor relevancia\footnote{Si planea participar en las Olimpiadas de F\'isica, le 
+ recomiendo que \textbf{si} considere estudiar este cap\'itulo.},  durante su vida universitaria como estudiante de STEM (Si eso es lo 
+ que quiere) tendr\'a que acostumbrarse a su uso.
+ 
+ \section{Cifras significativas}
+ 
+ 
+ 
+ \section{Unidades de medida y S.I.}
+\chapter{Cinemática}
+ \section{Movimiento en una dimensi\'on}
+  \subsection{MRU}
+  \subsection{MRUA}
+ \section{Movimiento en 2 dimensiones}
+  \subsection{Movimiento parab\'olico}
+  \subsection{Movimiento circunferencial uniforme}
+  \subsection{MCUA}
+  \subsection{Movimiento general en 2 dimensiones}
+  \section{Movimiento general en 3 dimensiones}
+\chapter{Dinámica}
+ \section{Leyes de Newton}
+  \subsection{Ley de inercia}
+  \subsection{Ley fundamental de la din\'amica}
+  \subsection{Ley de acci\'on-reacci\'on}
+  \section{Fuerzas t\'ipicas y aplicaciones}
+  \section{Din\'amica rotacional}
+\chapter{Cantidad de Movimiento, Momento Angular y S\'olido Rígido}
 aaaaa
-\section{Energ\'ia}
+\chapter{Energ\'ia}
 aaaaa
-\section{Oscilaciones y Ondas}
+\chapter{Fluidos}
+ \section{Hidr\'ostatica}
+  \subsection{Presi\'on}
+  \subsection{Empuje y equilibrio hidr\'ostatico}
+ \section{Hidrodin\'amica}
+\chapter{Oscilaciones y Ondas}
 aaaaaa
-\section{Calorimetr\'ia y Termodinámica}
+\chapter{Calorimetr\'ia y Termodinámica}
 aaaa
 \section{Electricidad}
 aaaaa
-\section{Magnetismo}
+\chapter{Magnetismo}
 aaaaa
-\section{F\'isica Moderna}
- \subsection{Conceptos de Relatividad Especial}
- \subsection{Conceptos de Relatividad General} 
- \subsection{Conceptos de Mecánica Cuántica}
-
+\chapter{F\'isica Moderna}
+ \section{Conceptos de Relatividad Especial}
+ \section{Conceptos de Relatividad General} 
+ \section{Conceptos de Mecánica Cuántica}
+\chapter{Ap\'endices}
 \begin{appendices}
-\section{C\'alculo Diferencial e Integral}
- \subsection{\'Algebra y Trigonometr\'ia}
- \subsection{L\'imites}
- \subsection{Derivadas}
- \subsection{Integrales}
-\section{\'Algebra de Vectores, Matrices y Calculo Vectorial}
+\chapter{C\'alculo Diferencial e Integral}
+ \section{\'Algebra y Trigonometr\'ia}
+ \section{L\'imites}
+ \section{Derivadas}
+ \section{Integrales}
+\chapter{\'Algebra de Vectores, Matrices e Introducci\'on al C\'alculo Vectorial}
 \end{appendices}
 \end{document}
